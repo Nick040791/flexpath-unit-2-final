@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://localhost:8080/auth/login
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "username": "admin",
+        "password": "admin"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      var res = pm.response.json();
+      pm.collectionVariables.set('token', res.accessToken.token);
+    language: text/javascript
+order: 6000

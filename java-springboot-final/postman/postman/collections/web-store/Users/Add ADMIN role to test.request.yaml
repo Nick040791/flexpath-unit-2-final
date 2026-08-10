@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8080/api/users/test/roles
+method: POST
+body:
+  type: json
+  content: ADMIN
+order: 5000

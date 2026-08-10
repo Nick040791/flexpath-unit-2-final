@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:8080/api/orders/6
+method: PUT
+body:
+  type: json
+  content: |-
+    {
+        "username" : "test"
+    }
+order: 4000

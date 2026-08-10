@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:8080/api/orders
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "username": "admin"
+    }
+order: 3000
