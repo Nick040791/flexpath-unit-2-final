@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://localhost:8080/api/order-items
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "orderId": 1,
+        "productId": 1,
+        "quantity": 1
+    }
+order: 3000

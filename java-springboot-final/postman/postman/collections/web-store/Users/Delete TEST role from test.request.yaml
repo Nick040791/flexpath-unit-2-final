@@ -1,0 +1,7 @@
+$kind: http-request
+url: http://localhost:8080/api/users/test/roles/test
+method: DELETE
+body:
+  type: json
+  content: TEST
+order: 8000

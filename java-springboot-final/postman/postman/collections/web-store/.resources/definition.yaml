@@ -1,0 +1,11 @@
+$kind: collection
+description: ""
+variables:
+  token: ""
+  password: admin
+auth:
+  - id: 0868ff0e-f89f-4f44-9f70-6a5cf6e40fc1
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{token}}"
