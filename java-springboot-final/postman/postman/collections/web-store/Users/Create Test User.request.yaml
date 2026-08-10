@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://localhost:8080/api/users
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "username": "test",
+        "password": "admin"
+    }
+order: 2000
