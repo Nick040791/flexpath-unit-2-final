@@ -1,5 +1,5 @@
 /*
-The README bonus says overwriting the username from Principal on both create and
+README bonus says overwriting the username from Principal on both create and
 update. The unit test "putOrderShouldUpdateThirdOrder" sends a body with username "user" and says
 that the returned order still has username "user". If I overwrite on PUT, that test fails. So only apply the
 Principal overwrite on POST.
